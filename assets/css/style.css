@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../fonts/poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../fonts/poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PoppinsLight;
+  src: url(../fonts/poppins/Poppins-Light.ttf);
+}
+
+
+@font-face {
+  font-family: PoppinsLightItalic;
+  src: url(../fonts/poppins/Poppins-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+
+.PoppinsSemiBold {
+  font-family: PoppinsSemiBold !important;
+}
+
+.PoppinsMedium {
+  font-family: PoppinsMedium !important;
+}
+
+.PoppinsLight {
+  font-family: PoppinsLight !important;
+}
+
+.PoppinsRegular {
+  font-family: PoppinsRegular !important;
+}
+
+.PoppinsLightItalic {
+  font-family: PoppinsLightItalic !important;
+}
+
+:root {
+  --themePrimary: #349399;
+  --themeSecondary: #777777;
+  --themeTextSecondary: #056721;
+  --themeSecondaryBg: #A0A0A0;
+  --black: #000;
+  --white: #fff;
+  --themeTextLight: #4E4B66;
+  --themeBgLight: #F5F0F0;
+  --themeBtnColor: #B6CA66;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  /* line-height: 24px; */
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+/* .fixed-top.scrolled {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  transition: background-color 200ms linear;
+} */
+
+.bg-image {
+  background-image: url(../images/343619.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+  background-attachment: fixed;
+
+}
+
+.btn-1 {
+  background-color: #745cf9;
+  color: white;
+  border-radius: 0;
+
+}
+
+.btn-2 {
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+}
+ 
+ .btn-2:hover {
+  background-color: white;
+  color: #000;
+  border-radius: 0;
+}
+
+.btn-1:hover {
+  background-color: #745cf9;
+  color: white;
+  border-radius: 0;
+}
+
+p {
+  color: #8c979e;
+}
+
+.bg-image1 {
+  background-image: url(../images/img5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  position: relative;
+  z-index: 3;
+  background-attachment: fixed;
+
+}
+
+.bg-image2 {
+  background-image: url(../images/img-18.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  position: relative;
+  z-index: 3;
+  background-attachment: fixed;
+}
+
+.foooter {
+  background: #000;
+  height: 20vh;
+}
+
+.cfg {
+  background: #f5f5f5;
+  height: 35vh;
+}
+
+.section-main {
+  padding: 4rem 0;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  /* max-width: 25% !important;
+  opacity: 0.5; */
+}
+
+.cf2 {
+  height: 40vh;
+}
+
+.navbar {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color:#4c4c4c !important;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  max-width: 100%;
+  white-space: normal;
+  justify-content: space-between;
+  font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+
+}
+
+.navbar,
+ul,
+li:hover {
+  color: blue;
+}
+
+span:hover {
+  color: #745cf9;
+  ;
+}
+
+.bi:hover {
+  color: #745cf9;
+  ;
+}
+
+.cmc {
+  font-size: 25px;
+}
+.btn, .button {
+  font-family: inherit;
+  border: 2px solid #745cf9;
+  padding: 8px 26px;
+  min-width: 200px;
+  line-height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  /* color: #745cf9; */
+  text-align: center;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  margin-right: 8px;
+  margin-bottom: 24px;
+  white-space: normal;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Add a transition effect for a smooth hover animation */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Add a transition effect for a smooth hover animation */
+}
+
+.image-container:hover .image {
+  opacity: 0.5; /* Set the opacity value between 0 and 1 */
+}
+
+.image-container:hover .text-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.owl-carousel {
+  text-align: center;
+}
+
+.nav-link:hover{
+  color: #745cf9;
+}
+.bg-image-5{
+  height:225px;
+  background:#f5f5f5 ;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+ 
+}
+/* .shapely-category-0 {
+  width: 32% !important;
+} */
+
+.shapely-category-0 {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  width: 50%;
+  margin-top: -2.9rem;
+  z-index: 100;
+}
+.shapely-category-0 a {
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #bebebe;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+  padding-bottom: 13px;
+  position: relative;
+}
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #f5f5f5;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form-control:hover{
+  border: 1px solid #745cf9;
+}
