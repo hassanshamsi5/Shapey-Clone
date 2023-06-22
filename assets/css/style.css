@@ -224,7 +224,8 @@ span:hover {
 }
 .image-container {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+  background-color: #000;
 }
 
 .image {
@@ -232,7 +233,7 @@ span:hover {
   width: 100%;
   height: auto;
   opacity: 1;
-  transition: opacity 0.3s ease; /* Add a transition effect for a smooth hover animation */
+  transition: opacity 2.0s ease; 
 }
 
 .text-overlay {
@@ -243,7 +244,7 @@ span:hover {
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* Add a transition effect for a smooth hover animation */
+  transition: opacity 0.3s ease, visibility 0.3s ease; 
 }
 
 .image-container:hover .image {
